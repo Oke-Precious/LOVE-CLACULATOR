@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    
+    /* background-image:conic-gradient(yellow, green); */
+    background-image:  linear-gradient(-45deg, mediumblue 50%, yellow 50%, cyan 50%, deepskyblue 55%, blueviolet 70%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:blue;
+    animation-name: title;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    letter-spacing: 1rem;
+    margin: 20px;
+}
+@keyframes title{
+    0%{
+        color: blue;
+        transform: scaleX(30%);
+    }
+    50%{
+       color: red;
+       transform: skew(20deg),;
+       
+    }
+    100%{
+        transform: translateY(20%);
+        color: white;
+    }
+}
+marquee{
+    color: white;
+    margin: 20px 0;
+}

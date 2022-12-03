@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE PERCENTAGE DETECTOR</title>
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><h1>
+        SPECIAL LOVE CALCULATOR
+    </h1></header>
+    <div class="backd"></div>
+    <div class="container-lg  container-sm parent shadow shadow-lg p-5 my-5 container-md" style="height: 500px;">
+        <div class="input-group-lg input-group-sm d-sm-flex align-items-center d-lg-flex d-md-flex gap-3">
+            <input type="text" id="yName"  placeholder="Enter Your Name" class="w-100 p-2 form-control my-2">
+            <p class="fs-3">❤</p>
+            <input type="text" id="lName" placeholder="Enter Your Lover's Name" class="w-100 p-2 my-2 form-control">
+        </div>
+        <div id="enter"></div>
+        <button onclick="result()" class="w-100 btn btn-primary my-2">Calculate Love</button>
+        <marquee behavior="" direction="">❤ 💕 ❤ 💖 💖 Love Calculator. It calculate the amount of Love(❤) you gat for your Spouse ❤ 💕 ❤ 💖 💖 </marquee>
+    
+        <div id="disp"></div>
+    </div>
+
+
+
+
+
+
+
+   <script>
+    // RANDDOM NUMBERS
+ 
+
+    
+    var date = new Date()
+    var song = new Audio()
+        song.pause()
+    
+    function result(){
+        randomNumber = song.pause()
+       if(lName.value == "" || yName.value == "" ){
+        song = new Audio("You-are-a-Mumu-Man.mp3");
+        song.play();
+        disp.innerHTML = `<p class="display-6">Please Kindly input your Name and your Lover's Name</p>`;
+        disp.style.color = "red" 
+       }
+       
+    //    else if(lName.value == lName.value, yName.value == "" ){
+    //     alert("hgg")
+    //    }
+       else if(lName.value == "Dolapo" && yName.value == "Precious" || lName.value == "Victoria" && yName.value == "Precious" || lName.value == "Precious" && yName.value == "Victoria" || yName.value == "Dolapo" && lName.value == "Precious"){
+        disp.innerHTML = `<h1>  ${100}% Twale! The BEST COUPLE EVER (Best Couple for the year) ${yName.value} ❤ ${lName.value}  Go fix Wedding Date and let's Know the Location</h1>`
+        song = new Audio("Best couple sound.mp3")
+        disp.style.color = "white"
+            song.play()
+       }
+
+       else {
+        var randomNumber =Math.round(Math.random()*100)   ;
+        if(randomNumber <= 25){
+            song = new Audio("Breakfast sure.mp3");
+            song.play();
+            disp.innerHTML = `<h1>  ${randomNumber}% I didnt think the relationship between ${yName.value} and ${lName.value} can work Breakfast Sure</h1>`;
+            disp.style.color = "red"
+            
+        }
+        else if(randomNumber > 25 && randomNumber < 50){
+            song = new Audio("Eyi Kin Se Opin.mp3")
+            song.play();
+            disp.innerHTML = `<h1>  ${randomNumber}% You better Make an amendment cus if  ${yName.value} slightly made a mistake or Offend ${lName.value} bayii "Sope O ti lor"</h1>`
+            disp.style.color = "pink "
+        }
+        else if(randomNumber >= 50 && randomNumber <=75){
+             song = new Audio("young love.mp3");
+            song.play()
+            disp.innerHTML = `<h1>  ${randomNumber}% Aha You both wanna become best couple I guess ${yName.value} love ❤💕 ${lName.value} Keep it Up</h1>`
+            disp.style.color = "white "
+        }
+        else if(randomNumber > 75 && randomNumber <=100){
+            song = new Audio("Best couple sound.mp3")
+            song.play()
+            disp.innerHTML = `<h1>  ${randomNumber}% Twale! The BEST COUPLE EVER (Best Couple for the year) ${yName.value} ❤ ${lName.value}  Go fix Wedding Date and let's Know the Location</h1>`
+            disp.style.color = "white"
+            
+            
+        }
+        
+        
+  
+       }
+     
+    
+        
+      lName.value = ""
+      yName.value = ""  
+    }
+
+    
+   
+   </script>
+   <script src="./all.js"></script>
+   <script src="./bootstrap.bundle.js"></script>
+</body>
+</html>
